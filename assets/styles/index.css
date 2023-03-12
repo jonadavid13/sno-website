@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-main-color: #008fc8;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+}
+
+.header {
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+}
+
+.header-title a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    width: 100vw;
+    background-color: var(--header-main-color);
+    padding: 1rem;
+}
+
+.navbar-logo {
+    height: 6rem;
+}
+
+.navbar-nav {
+    margin-left: 2rem;
+}
+
+.nav-link, #MenuNavegacion .nav-link .active {
+    color: white;
+}
+
+.header-ig-icon {
+    color: white;
+}
+
+.nav-item {
+    margin-right: 2rem;
+}
+
+/* MAIN */
+
+.main {
+    width: 100vw;
+}
+
+.main-banner-img {
+    width: 100vw;
+}
+
+.banner-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
