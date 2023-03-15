@@ -29,9 +29,9 @@ body {
 }
 
 .navbar {
-    width: 100vw;
     background-color: var(--header-main-color);
     padding: 1rem;
+    width: 100vw;
 }
 
 .navbar-logo {
@@ -68,10 +68,6 @@ body {
     height: 2000px;
 }
 
-.main {
-    width: 100vw;
-}
-
 .main-banner-img {
     width: 100vw;
 }
@@ -99,6 +95,25 @@ body {
     font-weight: 350;
 }
 
+/* Sección: CEPILLADOS */
+
+.cepillados-collage {
+    width: 80vw;
+}
+
+.cepillados-collage img {
+    width: 20rem;
+    margin: 0.5rem;
+}
+
+.cepillados-container .lead {
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+/* MEDIA QUERIES */
+
 @media (max-width: 768px){
     .main-banner-img {
         height: 75vh;
@@ -108,4 +123,25 @@ body {
     .banner-info h1 {
         font-size: 2.2rem;
     }
+
+    .cepillados-container .lead {
+        font-weight: 300;
+    }
+
+    .cepillados-collage {
+        width: 90vw;
+        margin: 0;
+    }
+
+    .cepillados-collage img {
+        margin: .5rem .5rem;
+        width: 40vw;
+    }
+}
+
+@media (max-width: 560px) {
+    .cepillados-collage {
+    }
+    
+    
 }
