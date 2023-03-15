@@ -54,7 +54,19 @@ body {
     margin-right: 2rem;
 }
 
+.navbar .container-fluid {
+    justify-content: space-between;
+}
+
+.container-fluid .navbar-toggler {
+    margin-right: 1rem;
+}
+
 /* MAIN */
+
+body {
+    height: 2000px;
+}
 
 .main {
     width: 100vw;
@@ -66,14 +78,34 @@ body {
 
 .banner-container {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .banner-info {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: rgba(6, 23, 37, 0.568);
+    padding: 1.5rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.banner-info .lead {
+    font-size: 1.8rem;
+}
+
+.banner-info .lead a {
+    font-size: 1.6rem;
+}
+
+.banner-info .lead-info {
+    margin: 1rem 0;
+    font-weight: 350;
+}
+
+@media (max-width: 768px){
+    .main-banner-img {
+        height: 75vh;
+        object-fit: cover;
+    }
+
+    .banner-info h1 {
+        font-size: 2.2rem;
+    }
 }
