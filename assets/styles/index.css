@@ -6,6 +6,16 @@
 
 :root {
     --header-main-color: #008fc8;
+    --rojo-sno: #de353f;
+    --celeste-sno: #26ade3;
+    --gris-sno: #dce2e1;
+    --dark-cyan-sno: #0c748b;
+    --light-blue-sno: #69c9e9;
+    --dark-aquamarine-sno: #126667;
+    --light-turquoise-sno: #76def8;
+    --brown-sno: #5b2c2d;
+    --blue-sno: #0b79b2;
+    --custom-cafe: rgb(121, 96, 68);
 }
 
 html {
@@ -15,10 +25,13 @@ html {
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.6rem;
+    background-color: blueviolet;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 40rem;
 }
 
 .header {
-    background-color: blueviolet;
     color: white;
     display: flex;
 }
@@ -31,7 +44,7 @@ body {
 .navbar {
     background-color: var(--header-main-color);
     padding: 1rem;
-    width: 100vw;
+    width: 100%;
 }
 
 .navbar-logo {
@@ -64,16 +77,16 @@ body {
 
 /* MAIN */
 
-body {
-    height: 2000px;
-}
-
-.main-banner-img {
-    width: 100vw;
+.cover-container {
+    background-color: aqua;
 }
 
 .banner-container {
     position: relative;
+    margin-bottom: 0;
+}
+.main-banner-img {
+    width: 100%;
 }
 
 .banner-info {
@@ -95,7 +108,17 @@ body {
     font-weight: 350;
 }
 
+.section-title {
+    font-size: calc(2rem + 2.1vw);
+}
+
 /* Sección: CEPILLADOS */
+
+.cepillados-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: white;
+}
 
 .cepillados-collage {
     width: 80vw;
@@ -104,12 +127,91 @@ body {
 .cepillados-collage img {
     width: 20rem;
     margin: 0.5rem;
+    box-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
 }
 
 .cepillados-container .lead {
     margin: 1rem 0;
     font-size: 1.8rem;
     font-weight: normal;
+}
+
+/* Sub-sección: SABORES */
+
+.sabores-container {
+    width: 100%;
+    background-color: white;
+    align-items: center;
+}
+
+.sabores-title {
+    width: 90vw;
+    padding: 1.6rem;
+    font-weight: 750 ;
+    color: white;
+    background-color: var(--rojo-sno);
+    border-radius: .3rem;
+}
+
+.sab-carousel-container {
+    width: 90vw;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.sab-carousel-container .carousel-item .section-title {
+    font-size: 3rem;
+}
+
+.sab-carousel-container .carousel-inner {
+    box-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
+    background-color: var(--celeste-sno);
+    padding: 0;
+    border-radius: .4rem;
+    max-width: 30rem;
+}
+
+.sab-carousel-container .carousel-item {
+    width: fit-content;
+}
+
+.sab-carousel-container .carousel-item img {
+    width: 30rem;
+    object-fit: cover;
+    justify-self: center;
+}
+
+.carousel-name {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.carrusel-sabores {
+    margin: 2rem 4rem;
+    border-radius: .3rem;
+}
+
+.carousel-item-title {
+    font-size: 2rem;
+    width: min-content;
+}
+
+.sab-carousel-container .carousel-caption {
+    background-color: rgba(44, 44, 44, 0.568);
+    width: 15rem;
+    left: 25%;
+    right: 25%;
+    padding: .5rem;
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+}
+
+#carruselEspeciales .carousel-inner {
+    background-color: var(--custom-cafe);
+}
+
+#carruselPremium .carousel-inner {
+    background-color: var(--rojo-sno);
 }
 
 /* MEDIA QUERIES */
@@ -137,11 +239,16 @@ body {
         margin: .5rem .5rem;
         width: 40vw;
     }
+
+    .sab-carousel-container .carousel-caption {
+        left: 20%;
+        right: 20%;
+    }
 }
 
-@media (max-width: 560px) {
-    .cepillados-collage {
+@media (max-width: 575px) {
+    .sab-carousel-container .carousel-caption {
+        width: 60%;
+        font-size: 1.2rem;
     }
-    
-    
 }
