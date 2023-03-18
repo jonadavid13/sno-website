@@ -13,7 +13,7 @@
     <main>
         <nav class="navbar navbar-expand-sm sticky-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img class="navbar-logo" src="./images/sno-icon-rounded.png" alt="SNO Logo">
                 </a>
                 <button 
@@ -43,7 +43,7 @@
                             <a class="nav-link fs-3 fw-semibold" href="#menu">Menú</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 fw-semibold" href="#ubicaciones">Ubicaciones</a>
+                            <a class="nav-link fs-3 fw-semibold" href="#sedes">Sedes</a>
                         </li>
                     </ul>
                 </div>
@@ -59,17 +59,17 @@
                 <img class="main-banner-img" src="./images/banner-1.jpg" alt="Productos SNO">
                 
                 <div class="banner-info carousel-caption">
-                    <h1>¡Tu momento dulce del día!</h1>
+                    <h1 class="mb-4">¡Tu momento dulce del día!</h1>
                     <p class="lead lead-info">Ven a SNÖ y disfruta de la dulzura de un rico cepillado combinado a tu gusto y sabrás lo que es satisfacción. <br>📲 Comunícate con tu #SNÖ más cercano y ¡Haz tu pedido! 💙👇🏼</p>
                     <p class="lead">
-                    <a href="#" class="btn btn-lg btn-primary fw-semibold px-4">Ver Ubicaciones </a>
+                    <a href="#sedes" class="btn btn-lg btn-primary fw-semibold px-4">Ver sedes </a>
                     </p>
                 </div>
             </figure>
         </section>
 
         <!-- Sección 1 - Cepillados -->
-        <section id="cepillados">
+        <section id="cepillados" class="section-cepillados">
             <div class="cepillados-container px-4 text-center d-flex flex-column justify-content-center">
                 <h1 class="display-5 fw-bold section-title">Cepillados</h1>
                 <div class="justify-content-center">
@@ -252,10 +252,225 @@
                     </div>
                 </div>
             </div>
-            
+            <!-- Sub-sección: Medidas -->
+            <div class="medidas-container text-center d-flex flex-column justify-content-center">
+                <div class="container d-flex flex-nowrap justify-content-center mb-5">
+                    <span class="section-title mt-medidas display-5 fw-bold me-3 ">MEDIDAS</span>
+                    <span class="section-title mt-sno display-5 fw-bold">SNÖ</span>
+                </div>
+                <div class="justify-content-center">
+                    <div class="medidas-collage d-flex flex-wrap justify-content-center">
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/tamano-pequeno.jpg" alt="Cepillado">
+                            <span class="fs-2 fw-bolder">7 oz</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/tamano-mediano.jpg" alt="Cepillado">
+                            <span class="fs-2 fw-bolder">12 oz</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/tamano-grande.jpg" alt="Cepillado">
+                            <span class="fs-2 fw-bolder">16 oz</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/tamano-extra-grande.jpg" alt="Cepillado">
+                            <span class="fs-2 fw-bolder">22 oz</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/tamano-gigante.jpg" alt="Cepillado">
+                            <span class="fs-2 fw-bolder">1 kg</span>
+                        </div>
+                    </div>
+                    <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: POSTRES -->
+        <section id="postres" class="section-postres">
+            <div class="postres-container pt-5 pb-2 text-center d-flex flex-column justify-content-center">
+                <h1 class="display-5 fw-bold section-title">Postres</h1>
+                <p class="postres-title lead mb-5">Contamos con una gran variedad de postres en distintas presentaciones y tamaños. ¿Cuál vas a escoger?</p>
+                
+                <div class="tortas-carousel-container text-center d-flex flex-wrap">
+                    <div class="carrusel-postres-marco">
+                        <div id="carruselPorciones" class="carrusel-postres carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carruselPorciones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carruselPorciones" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carruselPorciones" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <h2 class="carousel-name fw-bolder">PORCIONES</h2>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/porciones.jpg" class="d-block" alt="Porciones de torta">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/porcion3.jpg" class="d-block" alt="Porciones de torta">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/porciones2.jpg" class="d-block" alt="Porciones de torta">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselPorciones" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carruselPorciones" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- CARRUSEL TORTAS -->
+                    <div class="carrusel-postres-marco">
+                        <div id="carruselTortas" class="carrusel-postres carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carruselTortas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carruselTortas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carruselTortas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carruselTortas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <h2 class="carousel-name fw-bolder">POSTRES COMPLETOS</h2>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/completo1.jpg" class="d-block" alt="Torta">
+                                    <!-- <div class="container">
+                                        <div class="carousel-caption">
+                                        <span class="carousel-item-title">Torta</span>
+                                        </div>
+                                    </div> -->
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/completo2.jpg" class="d-block" alt="Torta">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/completo3.jpg" class="d-block" alt="Torta">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/completo4.jpg" class="d-block" alt="Torta">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carruselTortas" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carruselTortas" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Variados -->
+                <div class="variados-container justify-content-center my-5 rounded-3">
+                    <h2 class="carousel-name fw-bolder mb-5">VARIADOS</h2>
+
+                    <div class="variados-collage d-flex flex-wrap justify-content-center">
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/v-brownie.jpg" alt="Dulces variados">
+                            <span class="fs-2 fw-semibold">Brownies</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/v-trufas.jpg" alt="Dulces variados">
+                            <span class="fs-2 fw-semibold">Trufas</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/v-alfajores.jpg" alt="Dulces variados">
+                            <span class="fs-2 fw-semibold">Aljafores</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/v-marquesa (1).jpg" alt="Dulces variados">
+                            <span class="fs-2 fw-semibold">Marquesas</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/v-conservas.jpg" alt="Dulces variados">
+                            <span class="fs-2 fw-semibold">Conservas</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/v-polvorosas.jpg" alt="Dulces variados">
+                            <span class="fs-2 fw-semibold">Polvorosas</span>
+                        </div>
+                        <div class="medidas-card d-flex flex-column justify-content-center">
+                            <img class="d-block mb-2" src="./images/v-minidulce.jpg" alt="Dulces variados">
+                            <span class="fs-2 fw-semibold">Mini Dulces</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-    </div>
+        <!-- SECCIÓN: VARIEDADES  --> 
+        <section id="variedades" class="section-variedades">
+            <div class="variedades-container text-center d-flex flex-column justify-content-center">
+                <h1 class="display-5 fw-bold section-title">Variedades</h1>
+                <p class="postres-title lead mb-5">También ofrecemos una variedad de productos para acompañarte durante el transcurso de tu día y de la semana. ¿Qué se te antoja primero? </p>
+
+                <div class="var-cartas-container d-flex flex-wrap justify-content-center">
+                    <div class="card">
+                        <img src="./images/var-desayuno.jpg" alt="Cachito con cafe">
+                        <div class="card-body">
+                            <h2 class="card-title">Desayunos</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/var-jugo.jpg" alt="Jugo de fruta">
+                        <div class="card-body">
+                            <h2 class="card-title">Jugos</h2>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/var-merengada.jpg" alt="Jugo de fruta">
+                        <div class="card-body">
+                            <h2 class="card-title">Merengadas</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section-menu">
+            <div class="menu-container d-flex flex-column justify-content-center">
+                <h1 class="display-5 fw-bold section-title my-5">Menú</h1>
+                <div class="menu-img-container">
+                    <img src="./images/menu-sno-1.jpg" alt="Menu Sno 1">
+                </div>
+                <div class="menu-img-container">
+                    <img src="./images/menu-sno-2.jpg" alt="Menu Sno 1">
+                </div>
+                <a class="btn btn-primary fw-semibold" href="https://drive.google.com/file/d/1Ff66KWPcPAIF8Rv93NI8LvJg6XvQWwIS/view" role="button" target="_blank">Descargar Menú</a>
+            </div>
+        </section>
+        
+        <section id="sedes" class="section-sedes">
+            <div class="sedes-container d-flex flex-column justify-content-center">
+                <h1 class="display-5 fw-bold section-title my-5">Sedes</h1>
+
+                <div class="sedes-card-container d-flex flex-wrap justify-content-center">
+                    <div class="sedes-img-container">
+                        <img src="./images/sedes-1.jpg" alt="Sedes Sno">
+                    </div>
+                    <div class="sedes-img-container">
+                        <img src="./images/sedes-2.jpg" alt="Sedes Sno">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="footer-container">
+                <span class="footer-title fw-normal">© SNÖ 2023. Todos los derechos reservados.</span>
+                <!-- <a class="instagram-icon" href="" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                </a> -->
+            </div>
+        </footer>
         <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

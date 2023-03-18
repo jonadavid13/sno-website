@@ -15,7 +15,10 @@
     --light-turquoise-sno: #76def8;
     --brown-sno: #5b2c2d;
     --blue-sno: #0b79b2;
+    --dark-blue-sno: #1072ac;
     --custom-cafe: rgb(121, 96, 68);
+    --celeste-claro-sno: #c9effd;
+    --card-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
 }
 
 html {
@@ -28,7 +31,6 @@ body {
     background-color: blueviolet;
     object-fit: cover;
     width: 100%;
-    margin-bottom: 40rem;
 }
 
 .header {
@@ -43,12 +45,12 @@ body {
 
 .navbar {
     background-color: var(--header-main-color);
-    padding: 1rem;
+    padding: .7rem;
     width: 100%;
 }
 
 .navbar-logo {
-    height: 6rem;
+    height: 5rem;
 }
 
 .navbar-nav {
@@ -110,9 +112,14 @@ body {
 
 .section-title {
     font-size: calc(2rem + 2.1vw);
+    margin-bottom: 2rem;
 }
 
 /* Sección: CEPILLADOS */
+
+.section-cepillados {
+    background-color: white;
+}
 
 .cepillados-container {
     padding-top: 5rem;
@@ -122,6 +129,7 @@ body {
 
 .cepillados-collage {
     width: 80vw;
+    align-items: center;
 }
 
 .cepillados-collage img {
@@ -145,6 +153,7 @@ body {
 }
 
 .sabores-title {
+    font-size: 3.5rem;
     width: 90vw;
     padding: 1.6rem;
     font-weight: 750 ;
@@ -168,15 +177,15 @@ body {
     background-color: var(--celeste-sno);
     padding: 0;
     border-radius: .4rem;
-    max-width: 30rem;
+    width: 27.5rem;
 }
 
 .sab-carousel-container .carousel-item {
-    width: fit-content;
+    width: 100%;
 }
 
 .sab-carousel-container .carousel-item img {
-    width: 30rem;
+    width: 100%;
     object-fit: cover;
     justify-self: center;
 }
@@ -214,7 +223,243 @@ body {
     background-color: var(--rojo-sno);
 }
 
-/* MEDIA QUERIES */
+#carruselEspeciales .carousel-name {
+    color: var(--blue-sno);
+}
+#carruselPremium .carousel-name {
+    color: var(--rojo-sno);
+}
+
+.medidas-container {
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.medidas-container .section-title {
+    font-size: 3.5rem;
+}
+
+.medidas-container .mt-medidas {
+    color: var(--blue-sno);
+}
+.medidas-container .mt-sno {
+    color: var(--rojo-sno);
+}
+
+.medidas-card {
+    width: 20rem;
+    margin: 0 1rem 2rem;
+}
+
+.medidas-card img {
+    border-radius: .5rem;
+}
+
+/* SECCIÓN: POSTRES */
+
+.postres-container {
+    padding: 4rem;
+    background-color: var(--celeste-claro-sno);
+}
+
+.postres-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.tortas-carousel-container {
+    width: 70vw;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.tortas-carousel-container .carousel-inner {
+    width: 28rem;
+    box-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
+    border-radius: .3rem;
+}
+
+.tortas-carousel-container .carousel-item img {
+    width: 100%;
+}
+
+.carrusel-postres {
+    margin: 2rem 0;
+    padding: 0;
+    border-radius: .3rem;
+}
+
+.carrusel-postres .carousel-name {
+    font-size: 2.5rem;
+}
+
+/* .carrusel-postres-marco {
+    background-color: #def3fc;
+    margin: 0 2rem;
+    border-radius: .3rem;
+} */
+
+.carrusel-postres:first-child {
+    margin-right: 7rem;
+}
+.carrusel-postres:last-child {
+    margin-left: 7rem;
+}
+
+.variados-container {
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: #f0fbff;
+    box-shadow: .05rem .05rem .5rem rgb(23, 87, 129) inset;
+}
+
+.variados-collage .medidas-card {
+    margin: 1rem 1.5rem;
+    width: 18rem;
+}
+
+/* SECCIÓN VARIEDADES */
+
+.section-variedades {
+    background-color: white;
+    padding: 5rem 2.5rem;
+}
+
+.variedades-container {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.variedades-container .card {
+    width: 30rem;
+    box-shadow: var(--card-shadow);
+    border-radius: .5rem;
+    margin: 2rem 3rem;
+}
+
+.variedades-container .card img {
+    border-bottom: solid .05rem rgb(83, 83, 83);
+}
+
+/* SECCIÓN: MENÚ */
+
+
+.menu-container {
+    width: 100%;
+    padding-bottom: 4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue-sno);
+}
+
+.menu-container .section-title {
+    color: white;
+}
+
+.menu-img-container {
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+}
+
+.menu-img-container img {
+    height: 85vh;
+    border-radius: .3rem;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 3rem;
+}
+
+.menu-container .btn {
+    font-size: 2rem;
+    padding: .5rem 3rem;
+    color: #010d14;
+    background-color: white;
+}
+
+.menu-container .btn:hover {
+    color: white;
+    background-color: rgb(6, 66, 112);
+}
+
+/* SECCIÓN: SEDES */
+
+.sedes-container {
+    background-color: var(--celeste-claro-sno);
+    align-items: center;
+}
+
+.sedes-img-container {
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+}
+
+.sedes-img-container img {
+    width: 75vh;
+    border-radius: .3rem;
+    box-shadow: var(--card-shadow);
+}
+
+/* FOOTER */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    background-color: #03507c;
+    color: white;
+}
+
+.footer-title a {
+    justify-self: end;
+    color: white;
+}
+
+/* ---------------------------- MEDIA QUERIES ---------------------------- */
+
+@media (max-width: 1200px) {
+    .tortas-carousel-container {
+        width: 90vw;
+    }
+
+    .carrusel-postres:first-child {
+        margin-right: 2.5rem;
+    }
+    .carrusel-postres:last-child {
+        margin-left: 2.5rem;
+    }
+}
+
+@media (max-width: 992px){
+    .section-title {
+        font-size: 3.4rem;
+    }
+
+    .tortas-carousel-container {
+        width: 90vw;
+    }
+
+    .carrusel-postres:first-child {
+        margin-right: 2rem;
+    }
+    .carrusel-postres:last-child {
+        margin-left: 2rem;
+    }
+
+    .tortas-carousel-container .carousel-inner {
+        width: 35vw;
+    }
+
+    .menu-img-container {
+        width: 90vw;
+    }
+
+    .menu-img-container img {
+        width: 100%;
+        height: 100%;
+    }
+}
 
 @media (max-width: 768px){
     .main-banner-img {
@@ -243,6 +488,58 @@ body {
     .sab-carousel-container .carousel-caption {
         left: 20%;
         right: 20%;
+    }
+
+    .tortas-carousel-container .carousel-name {
+        font-size: 2.7rem;
+    }
+
+    .medidas-container {
+        width: 100vw;
+    }
+
+    .medidas-container .medidas-card {
+        width: 16rem;
+        margin: 0 .5rem 1.5rem;
+    }
+
+    .medidas-container .section-title {
+        font-size: 3rem;
+    }
+
+    .postres-title {
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+    
+    .tortas-carousel-container {
+        width: 80vw;
+        justify-content: center;
+    }
+
+    .tortas-carousel-container .carousel-inner {
+        width: 30rem;
+    }
+
+    .tortas-carousel-container .carousel-inner {
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .carrusel-postres:first-child {
+        margin-right: 0;
+    }
+    .carrusel-postres:last-child {
+        margin-left: 0;
+    }
+
+    .sedes-img-container {
+        width: 100vw;
+    }
+    
+    .sedes-img-container img {
+        width: 100%;
+        height: 100%;
     }
 }
 
