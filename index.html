@@ -31,19 +31,19 @@
                             <a class="nav-link fs-3 fw-semibold" href="#index">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 fw-semibold" href="#cepillados">Cepillados</a>
+                            <a class="nav-link fs-3 fw-semibold" href="#cepillados-index">Cepillados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 fw-semibold" href="#postres">Postres</a>
+                            <a class="nav-link fs-3 fw-semibold" href="#postres-index">Postres</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 fw-semibold" href="#variedades">Variedades</a>
+                            <a class="nav-link fs-3 fw-semibold" href="#variedades-index">Variedades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 fw-semibold" href="#menu">Menú</a>
+                            <a class="nav-link fs-3 fw-semibold" href="#menu-index">Menú</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fs-3 fw-semibold" href="#sedes">Sedes</a>
+                            <a class="nav-link fs-3 fw-semibold" href="#sedes-index">Sedes</a>
                         </li>
                     </ul>
                 </div>
@@ -56,13 +56,13 @@
         </nav>
         <section id="index" class="cover-container main-banner carousel-slide">
             <figure class="banner-container d-flex">
-                <img class="main-banner-img" src="./images/banner-1.jpg" alt="Productos SNO">
+                <img class="main-banner-img" src="./images/banner-fb-sno.png" alt="Productos SNO">
                 
-                <div class="banner-info carousel-caption">
+                <div class="banner-info carousel-caption rounded-3">
                     <h1 class="mb-4">¡Tu momento dulce del día!</h1>
                     <p class="lead lead-info">Ven a SNÖ y disfruta de la dulzura de un rico cepillado combinado a tu gusto y sabrás lo que es satisfacción. <br>📲 Comunícate con tu #SNÖ más cercano y ¡Haz tu pedido! 💙👇🏼</p>
-                    <p class="lead">
-                    <a href="#sedes" class="btn btn-lg btn-primary fw-semibold px-4">Ver sedes </a>
+                    <p id="cepillados-index" class="lead">
+                    <a href="#sedes" class="btn btn-lg btn-primary fw-semibold px-4">Ver Sedes</a>
                     </p>
                 </div>
             </figure>
@@ -278,7 +278,7 @@
                         </div>
                         <div class="medidas-card d-flex flex-column justify-content-center">
                             <img class="d-block mb-2" src="./images/tamano-gigante.jpg" alt="Cepillado">
-                            <span class="fs-2 fw-bolder">1 kg</span>
+                            <span id="postres-index" class="fs-2 fw-bolder">1 kg</span>
                         </div>
                     </div>
                     <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
@@ -397,7 +397,7 @@
                         </div>
                         <div class="medidas-card d-flex flex-column justify-content-center">
                             <img class="d-block mb-2" src="./images/v-minidulce.jpg" alt="Dulces variados">
-                            <span class="fs-2 fw-semibold">Mini Dulces</span>
+                            <span id="variedades-index" class="fs-2 fw-semibold">Mini Dulces</span>
                         </div>
                     </div>
                 </div>
@@ -426,13 +426,14 @@
                     <div class="card">
                         <img src="./images/var-merengada.jpg" alt="Jugo de fruta">
                         <div class="card-body">
-                            <h2 class="card-title">Merengadas</h2>
+                            <h2 id="menu-index" class="card-title">Merengadas</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECCIÓN: MENÚ -->
         <section id="menu" class="section-menu">
             <div class="menu-container d-flex flex-column justify-content-center">
                 <h1 class="display-5 fw-bold section-title my-5">Menú</h1>
@@ -442,10 +443,11 @@
                 <div class="menu-img-container">
                     <img src="./images/menu-sno-2.jpg" alt="Menu Sno 1">
                 </div>
-                <a class="btn btn-primary fw-semibold" href="https://drive.google.com/file/d/1Ff66KWPcPAIF8Rv93NI8LvJg6XvQWwIS/view" role="button" target="_blank">Descargar Menú</a>
+                <a id="sedes-index" class="btn btn-primary fw-semibold" href="https://drive.google.com/file/d/1Ff66KWPcPAIF8Rv93NI8LvJg6XvQWwIS/view" role="button" target="_blank">Descargar Menú</a>
             </div>
         </section>
         
+        <!-- SECCIÓN: SEDES -->
         <section id="sedes" class="section-sedes">
             <div class="sedes-container d-flex flex-column justify-content-center">
                 <h1 class="display-5 fw-bold section-title my-5">Sedes</h1>
@@ -461,6 +463,10 @@
             </div>
         </section>
 
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        </main>
         <footer id="footer">
             <div class="footer-container">
                 <span class="footer-title fw-normal">© SNÖ 2023. Todos los derechos reservados.</span>
@@ -471,9 +477,5 @@
                 </a> -->
             </div>
         </footer>
-        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    </main>
-</body>
+    </body>
 </html>
