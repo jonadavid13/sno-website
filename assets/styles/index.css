@@ -1,297 +1,310 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --header-main-color: #008fc8;
-    --rojo-sno: #de353f;
-    --celeste-sno: #26ade3;
-    --gris-sno: #dce2e1;
-    --dark-cyan-sno: #0c748b;
-    --light-blue-sno: #69c9e9;
-    --dark-aquamarine-sno: #126667;
-    --light-turquoise-sno: #76def8;
-    --brown-sno: #5b2c2d;
-    --blue-sno: #0b79b2;
-    --dark-blue-sno: #1072ac;
-    --custom-cafe: rgb(121, 96, 68);
-    --celeste-claro-sno: #c9effd;
-    --card-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
+  --header-main-color: #008fc8;
+  --rojo-sno: #de353f;
+  --celeste-sno: #26ade3;
+  --gris-sno: #dce2e1;
+  --dark-cyan-sno: #0c748b;
+  --light-blue-sno: #69c9e9;
+  --dark-aquamarine-sno: #126667;
+  --light-turquoise-sno: #76def8;
+  --brown-sno: #5b2c2d;
+  --blue-sno: #0b79b2;
+  --dark-blue-sno: #1072ac;
+  --custom-cafe: rgb(121, 96, 68);
+  --celeste-claro-sno: #c9effd;
+  --celeste-claro2-sno: #7ccbe7;
+  --card-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.6rem;
-    background-color: blueviolet;
-    object-fit: cover;
-    width: 100%;
+  font-family: "Nunito Sans", "Red Hat Display", "Segoe UI", Verdana, sans-serif;
+  font-size: 1.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 
 .header {
-    color: white;
-    display: flex;
+  color: white;
+  display: flex;
 }
 
 .header-title a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .navbar {
-    background-color: var(--header-main-color);
-    padding: .7rem;
-    width: 100%;
+  background-color: var(--header-main-color);
+  padding: 0.7rem;
+  width: 100%;
 }
 
 .navbar-logo {
-    height: 5rem;
+  height: 5rem;
 }
 
 .navbar-nav {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .nav-link, #MenuNavegacion .nav-link .active {
-    color: white;
+  color: white;
 }
 
 .header-ig-icon {
-    color: white;
+  color: white;
 }
 
 .nav-item {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
 
 .navbar .container-fluid {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .container-fluid .navbar-toggler {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 /* MAIN */
-
 .cover-container {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 .banner-container {
-    position: relative;
-    margin-bottom: 0;
+  position: relative;
+  margin-bottom: 0;
 }
+
 .main-banner-img {
-    width: 100%;
+  width: 100%;
 }
 
 .banner-info {
-    background-color: rgba(6, 23, 37, 0.568);
-    padding: 1.5rem 2rem;
-    margin-bottom: 3rem;
+  background-color: rgba(6, 23, 37, 0.568);
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
 }
 
 .banner-info .lead {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .banner-info .lead a {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .banner-info .lead-info {
-    margin: 1rem 0;
-    font-weight: 350;
+  margin: 1rem 0;
+  font-weight: 350;
 }
 
 .section-title {
-    font-size: calc(2rem + 2.1vw);
-    margin-bottom: 2rem;
+  font-size: calc(1.8rem + 2.1vw);
+  font-weight: 900;
+  margin-bottom: 2rem;
 }
 
 /* Sección: CEPILLADOS */
-
 .section-cepillados {
-    background-color: white;
+  background-color: white;
+}
+.section-cepillados .carousel-name {
+  font-weight: 900;
+}
+.section-cepillados .medidas-container .section-title {
+  font-weight: 900;
 }
 
 .cepillados-container {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-color: white;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: white;
 }
 
 .cepillados-collage {
-    width: 80vw;
-    align-items: center;
+  width: 80vw;
+  align-items: center;
 }
 
 .cepillados-collage img {
-    width: 20rem;
-    margin: 0.5rem;
-    box-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
+  width: 20rem;
+  margin: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(31, 31, 31);
 }
 
 .cepillados-container .lead {
-    margin: 1rem 0;
-    font-size: 1.8rem;
-    font-weight: normal;
+  margin: 1rem 0;
+  font-size: 1.8rem;
+  font-weight: normal;
 }
 
 /* Sub-sección: SABORES */
-
 .sabores-container {
-    width: 100%;
-    background-color: white;
-    align-items: center;
+  width: 100%;
+  background-color: white;
+  align-items: center;
 }
 
 .sabores-title {
-    font-size: 3.5rem;
-    width: 90vw;
-    padding: 1.6rem;
-    font-weight: 750 ;
-    color: white;
-    background-color: var(--rojo-sno);
-    border-radius: .3rem;
+  font-size: 3.5rem;
+  padding: 1.4rem 10rem;
+  font-weight: 750;
+  color: white;
+  background-color: var(--rojo-sno);
+  border-radius: 0.3rem;
 }
 
 .sab-carousel-container {
-    width: 90vw;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+  width: 90vw;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .sab-carousel-container .carousel-item .section-title {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .sab-carousel-container .carousel-inner {
-    box-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
-    background-color: var(--celeste-sno);
-    padding: 0;
-    border-radius: .4rem;
-    width: 27.5rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(31, 31, 31);
+  background-color: var(--celeste-sno);
+  padding: 0;
+  border-radius: 0.4rem;
+  width: 27.5rem;
 }
 
 .sab-carousel-container .carousel-item {
-    width: 100%;
+  width: 100%;
 }
 
 .sab-carousel-container .carousel-item img {
-    width: 100%;
-    object-fit: cover;
-    justify-self: center;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  justify-self: center;
 }
 
 .carousel-name {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .carrusel-sabores {
-    margin: 2rem 4rem;
-    border-radius: .3rem;
+  margin: 2rem 4rem;
+  border-radius: 0.3rem;
 }
 
 .carousel-item-title {
-    font-size: 2rem;
-    width: min-content;
+  font-size: 2rem;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .sab-carousel-container .carousel-caption {
-    background-color: rgba(44, 44, 44, 0.568);
-    width: 15rem;
-    left: 25%;
-    right: 25%;
-    padding: .5rem;
-    border-radius: .3rem;
-    margin-bottom: 2rem;
+  background-color: rgba(44, 44, 44, 0.568);
+  width: 15rem;
+  left: 25%;
+  right: 25%;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
 }
 
 #carruselEspeciales .carousel-inner {
-    background-color: var(--custom-cafe);
+  background-color: var(--custom-cafe);
 }
 
 #carruselPremium .carousel-inner {
-    background-color: var(--rojo-sno);
+  background-color: var(--rojo-sno);
 }
 
 #carruselEspeciales .carousel-name {
-    color: var(--blue-sno);
+  color: var(--blue-sno);
 }
+
 #carruselPremium .carousel-name {
-    color: var(--rojo-sno);
+  color: var(--rojo-sno);
 }
 
 .medidas-container {
-    width: 90vw;
-    margin: 0 auto;
-    padding-bottom: 4rem;
+  width: 90vw;
+  margin: 0 auto;
+  padding-bottom: 4rem;
 }
 
 .medidas-container .section-title {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 .medidas-container .mt-medidas {
-    color: var(--blue-sno);
+  color: var(--blue-sno);
 }
+
 .medidas-container .mt-sno {
-    color: var(--rojo-sno);
+  color: var(--rojo-sno);
 }
 
 .medidas-card {
-    width: 20rem;
-    margin: 0 1rem 2rem;
+  width: 20rem;
+  margin: 0 1rem 2rem;
 }
 
 .medidas-card img {
-    border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /* SECCIÓN: POSTRES */
-
 .postres-container {
-    padding: 4rem;
-    background-color: var(--celeste-claro-sno);
+  padding: 4rem;
+  background-color: var(--celeste-claro-sno);
+}
+.postres-container .carousel-name {
+  font-weight: 750;
 }
 
 .postres-title {
-    font-size: 2.2rem;
-    font-weight: 400;
+  font-size: 2.2rem;
+  font-weight: 400;
 }
 
 .tortas-carousel-container {
-    width: 70vw;
-    margin: 0 auto;
-    justify-content: center;
+  width: 70vw;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .tortas-carousel-container .carousel-inner {
-    width: 28rem;
-    box-shadow: .1rem .1rem .5rem rgb(31, 31, 31);
-    border-radius: .3rem;
+  width: 28rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(31, 31, 31);
+  border-radius: 0.3rem;
 }
 
 .tortas-carousel-container .carousel-item img {
-    width: 100%;
+  width: 100%;
 }
 
 .carrusel-postres {
-    margin: 2rem 0;
-    padding: 0;
-    border-radius: .3rem;
+  margin: 2rem 0;
+  padding: 0;
+  border-radius: 0.3rem;
 }
 
 .carrusel-postres .carousel-name {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 /* .carrusel-postres-marco {
@@ -299,253 +312,223 @@ body {
     margin: 0 2rem;
     border-radius: .3rem;
 } */
-
 .carrusel-postres:first-child {
-    margin-right: 7rem;
+  margin-right: 7rem;
 }
+
 .carrusel-postres:last-child {
-    margin-left: 7rem;
+  margin-left: 7rem;
 }
 
 .variados-container {
-    align-items: center;
-    padding: 2rem 1rem;
-    background-color: #f0fbff;
-    box-shadow: .05rem .05rem .5rem rgb(23, 87, 129) inset;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: #f0fbff;
+  box-shadow: 0.05rem 0.05rem 0.5rem rgb(23, 87, 129) inset;
 }
 
 .variados-collage .medidas-card {
-    margin: 1rem 1.5rem;
-    width: 18rem;
+  margin: 1rem 1.5rem;
+  width: 18rem;
 }
 
 /* SECCIÓN VARIEDADES */
-
 .section-variedades {
-    background-color: white;
-    padding: 5rem 2.5rem 3rem;
+  background-color: white;
+  padding: 5rem 2.5rem 3rem;
 }
 
 .variedades-container {
-    margin: 0 auto;
-    width: 90vw;
+  margin: 0 auto;
+  width: 90vw;
 }
 
 .variedades-container .card {
-    width: 30rem;
-    box-shadow: var(--card-shadow);
-    border-radius: .5rem;
-    margin: 2rem 3rem;
+  width: 30rem;
+  box-shadow: var(--card-shadow);
+  border-radius: 0.5rem;
+  margin: 2rem 3rem;
 }
 
 .variedades-container .card img {
-    border-bottom: solid .05rem rgb(83, 83, 83);
+  border-bottom: solid 0.05rem rgb(83, 83, 83);
 }
 
 /* SECCIÓN: MENÚ */
-
-
 .menu-container {
-    width: 100%;
-    padding-bottom: 4rem;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--dark-blue-sno);
+  width: 100%;
+  padding-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue-sno);
 }
 
 .menu-container .section-title {
-    color: white;
+  color: white;
 }
 
 .menu-img-container {
-    display: flex;
-    justify-content: center;
-    width: 90vw;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
 }
 
 .menu-img-container img {
-    height: 85vh;
-    border-radius: .3rem;
-    box-shadow: var(--card-shadow);
-    margin-bottom: 3rem;
+  height: 85vh;
+  border-radius: 0.3rem;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 3rem;
 }
 
 .menu-container .btn {
-    font-size: 2rem;
-    padding: .5rem 3rem;
-    color: #010d14;
-    background-color: white;
+  font-size: 2rem;
+  padding: 0.5rem 3rem;
+  color: #010d14;
+  background-color: white;
 }
 
 .menu-container .btn:hover {
-    color: white;
-    background-color: rgb(6, 66, 112);
+  color: white;
+  background-color: rgb(6, 66, 112);
 }
 
 /* SECCIÓN: SEDES */
-
 .sedes-container {
-    background-color: var(--celeste-claro-sno);
-    align-items: center;
+  background-color: var(--celeste-claro2-sno);
+  align-items: center;
 }
 
 .sedes-img-container {
-    margin-bottom: 3rem;
-    padding: 0 2rem;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
 }
 
 .sedes-img-container img {
-    width: 75vh;
-    border-radius: .3rem;
-    box-shadow: var(--card-shadow);
+  width: 75vh;
+  border-radius: 0.3rem;
+  box-shadow: var(--card-shadow);
 }
 
 /* FOOTER */
-
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 8rem;
-    background-color: #03507c;
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  background-color: #03507c;
+  color: white;
 }
 
 .footer-title a {
-    justify-self: end;
-    color: white;
+  justify-self: end;
+  color: white;
 }
 
 /* ---------------------------- MEDIA QUERIES ---------------------------- */
-
 @media (max-width: 1200px) {
-    .tortas-carousel-container {
-        width: 90vw;
-    }
-
-    .carrusel-postres:first-child {
-        margin-right: 2.5rem;
-    }
-    .carrusel-postres:last-child {
-        margin-left: 2.5rem;
-    }
+  .tortas-carousel-container {
+    width: 90vw;
+  }
+  .carrusel-postres:first-child {
+    margin-right: 2.5rem;
+  }
+  .carrusel-postres:last-child {
+    margin-left: 2.5rem;
+  }
 }
-
-@media (max-width: 992px){
-    .section-title {
-        font-size: 3.4rem;
-    }
-
-    .tortas-carousel-container {
-        width: 90vw;
-    }
-
-    .carrusel-postres:first-child {
-        margin-right: 2rem;
-    }
-    .carrusel-postres:last-child {
-        margin-left: 2rem;
-    }
-
-    .tortas-carousel-container .carousel-inner {
-        width: 35vw;
-    }
-
-    .menu-img-container {
-        width: 90vw;
-    }
-
-    .menu-img-container img {
-        width: 100%;
-        height: 100%;
-    }
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 3.4rem;
+  }
+  .tortas-carousel-container {
+    width: 90vw;
+  }
+  .carrusel-postres:first-child {
+    margin-right: 2rem;
+  }
+  .carrusel-postres:last-child {
+    margin-left: 2rem;
+  }
+  .tortas-carousel-container .carousel-inner {
+    width: 35vw;
+  }
+  .menu-img-container {
+    width: 90vw;
+  }
+  .menu-img-container img {
+    width: 100%;
+    height: 100%;
+  }
 }
-
-@media (max-width: 768px){
-    .main-banner-img {
-        height: 75vh;
-        object-fit: cover;
-    }
-
-    .banner-info h1 {
-        font-size: 2.2rem;
-    }
-
-    .cepillados-container .lead {
-        font-weight: 300;
-    }
-
-    .cepillados-collage {
-        width: 90vw;
-        margin: 0;
-    }
-
-    .cepillados-collage img {
-        margin: .5rem .5rem;
-        width: 40vw;
-    }
-
-    .sab-carousel-container .carousel-caption {
-        left: 20%;
-        right: 20%;
-    }
-
-    .tortas-carousel-container .carousel-name {
-        font-size: 2.7rem;
-    }
-
-    .medidas-container {
-        width: 100vw;
-    }
-
-    .medidas-container .medidas-card {
-        width: 16rem;
-        margin: 0 .5rem 1.5rem;
-    }
-
-    .medidas-container .section-title {
-        font-size: 3rem;
-    }
-
-    .postres-title {
-        font-size: 1.8rem;
-        font-weight: 300;
-    }
-    
-    .tortas-carousel-container {
-        width: 80vw;
-        justify-content: center;
-    }
-
-    .tortas-carousel-container .carousel-inner {
-        width: 30rem;
-    }
-
-    .tortas-carousel-container .carousel-inner {
-        justify-content: center;
-        width: 80vw;
-    }
-
-    .carrusel-postres:first-child {
-        margin-right: 0;
-    }
-    .carrusel-postres:last-child {
-        margin-left: 0;
-    }
-
-    .sedes-img-container {
-        width: 100vw;
-    }
-    
-    .sedes-img-container img {
-        width: 100%;
-        height: 100%;
-    }
+@media (max-width: 768px) {
+  .main-banner-img {
+    height: 75vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .banner-info h1 {
+    font-size: 2.2rem;
+  }
+  .cepillados-container .lead {
+    font-weight: 300;
+  }
+  .cepillados-collage {
+    width: 90vw;
+    margin: 0;
+  }
+  .cepillados-collage img {
+    margin: 0.5rem 0.5rem;
+    width: 40vw;
+  }
+  .sab-carousel-container .carousel-caption {
+    left: 20%;
+    right: 20%;
+  }
+  .tortas-carousel-container .carousel-name {
+    font-size: 2.7rem;
+  }
+  .medidas-container {
+    width: 100vw;
+  }
+  .medidas-container .medidas-card {
+    width: 16rem;
+    margin: 0 0.5rem 1.5rem;
+  }
+  .medidas-container .section-title {
+    font-size: 3rem;
+  }
+  .postres-title {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .tortas-carousel-container {
+    width: 80vw;
+    justify-content: center;
+  }
+  .tortas-carousel-container .carousel-inner {
+    width: 30rem;
+  }
+  .tortas-carousel-container .carousel-inner {
+    justify-content: center;
+    width: 80vw;
+  }
+  .carrusel-postres:first-child {
+    margin-right: 0;
+  }
+  .carrusel-postres:last-child {
+    margin-left: 0;
+  }
+  .sedes-img-container {
+    width: 100vw;
+  }
+  .sedes-img-container img {
+    width: 100%;
+    height: 100%;
+  }
 }
-
 @media (max-width: 575px) {
-    .sab-carousel-container .carousel-caption {
-        width: 60%;
-        font-size: 1.2rem;
-    }
-}
+  .sab-carousel-container .carousel-caption {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+}/*# sourceMappingURL=index.css.map */
